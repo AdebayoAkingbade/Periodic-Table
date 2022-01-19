@@ -1,0 +1,112 @@
+*{
+    background-color: black;
+    font-family: "poppins", "sans-serif";
+    color: white;
+    margin-left: 5px;
+}
+
+.periodic-table{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
+    grid-gap: 2px;
+    margin: auto;
+    max-width: 1200px;
+    justify-content: center;
+    /* background-color: brown; */
+    background-color: black;
+}
+
+.element{
+    padding: 4px;
+    position: relative;
+    z-index: 1;
+    cursor: default;
+    transition: all 0.3s ease;
+    height: 70px;
+}
+
+.element .periodic-element-inner{
+    padding: 10px 8px;
+    width: calc(5% - 10px);
+    height: calc(150% - 400px);
+    /* transition: inherit; */
+}
+.element .name{
+    font: 700 26.1538px "Poppins",sans-serif;
+    margin: 0.3em 0 0;
+    transition: 0.8s ease 750ms;
+}
+
+.element .post{
+    font: 500 12px"Poppins",sans-serif;
+    margin-top: -0.2em;
+}
+
+.element .periodic-element-inner{
+    background: transparent;
+}
+
+.element:hover .name, .element:hover .post{
+    -webkit-text-fill-color: black;
+}
+
+.element:hover::after{
+    top: 105%;
+    opacity: 1;
+}
+
+.element{
+    cursor: pointer;
+}
+
+.periodic-element-one{
+ grid-row: 1/18;
+}
+
+.space1{
+    grid-column: 3/19;
+}
+
+.space2{
+    grid-column: 4/14;
+}
+
+.space3{
+    grid-column: 5/14;
+}
+
+.period{
+    margin-left: 35px;
+}
+
+.green{
+    background-color: green;
+    background: linear-gradient(to bottom right);
+}
+
+.lemon{
+    background-color: greenyellow;
+}
+
+.blood{
+    background-color: #891c19;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.brown{
+    background-color: 	#B5651D;
+}
+
+.pink{
+    background-color: deeppink;
+}
+.sky{
+    background-color: deepskyblue;
+}
+.red{
+    background-color: red;
+}
